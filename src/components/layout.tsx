@@ -1,9 +1,12 @@
 import * as React from 'react';
 import {Fragment} from 'react';
-import Header from './header';
+import Header from './Header';
 import './layout.css';
 import {useSiteMetadata} from '../hooks';
 import styled from 'styled-components';
+// @ts-ignore
+import favicon from '../images/favicon.png';
+import Helmet from 'react-helmet';
 
 interface Props {
   children: React.ReactNode;
@@ -12,7 +15,12 @@ interface Props {
 const Body = styled.div`
   margin: 0 auto;
   max-width: 960px;
-  padding: 0 1.0875rem 1.45rem;
+  padding: 1.45rem 2rem;
+  
+  @media (min-width: 800px) {
+    padding-top: 0;
+    transform: translateY(-40px);
+  }
 `;
 
 const Layout = ({children}: Props) => {
@@ -20,14 +28,14 @@ const Layout = ({children}: Props) => {
 
   return (
     <Fragment>
-      <Header siteTitle={title} />
+      <Helmet
+        link={[
+          {rel: 'shortcut icon', type: 'image/png', href: favicon}
+        ]}
+      />
+      <Header siteTitle={title}/>
       <Body>
         <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
       </Body>
     </Fragment>
   );

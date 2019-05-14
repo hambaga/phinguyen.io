@@ -1,3 +1,5 @@
+require("prism-themes/themes/prism-xonokai.css");
+
 /**
  * Implement Gatsby's Browser APIs in this file.
  *
