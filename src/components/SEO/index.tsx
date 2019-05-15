@@ -1,7 +1,8 @@
 import * as React from 'react';
 import Helmet from 'react-helmet';
-import {useStaticQuery, graphql} from 'gatsby';
 import {useSiteMetadata} from '../../hooks';
+// @ts-ignore
+import avatar from '../../images/avatar.jpg';
 
 interface Props {
   description?: string;
@@ -28,7 +29,11 @@ const Index = ({
     },
     {
       property: `og:title`,
-      content: title,
+      content: `${title} | ${siteMetadata.title}`,
+    },
+    {
+      property: `og:image`,
+      content: avatar
     },
     {
       property: `og:description`,
@@ -48,7 +53,7 @@ const Index = ({
     },
     {
       name: `twitter:title`,
-      content: title,
+      content: `${title} | ${siteMetadata.title}`,
     },
     {
       name: `twitter:description`,
