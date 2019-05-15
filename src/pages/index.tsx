@@ -6,6 +6,7 @@ import {Paper} from '../components/UIKit';
 import {graphql, Link} from 'gatsby';
 import {format} from 'date-fns';
 import Avatar from '../components/avatar';
+import Img from 'gatsby-image';
 
 const BlogWrapper = styled.div`
 
@@ -32,15 +33,18 @@ const Logos = styled.div`
   display: flex;
   padding-top: 20px;
   flex-wrap: wrap;
+  height: 30px;
 `;
 
-const Logo = styled.img`
+const Logo = styled.div`
   height: 30px;
+  width: 30px;
   display: block;
   margin: 5px;
 `;
 
 export default (props) => {
+  console.log(props.data.logos);
   const postList = props.data.allMarkdownRemark;
 
   return (
@@ -58,14 +62,11 @@ export default (props) => {
               different topics in the industry.
             </span>
             <Logos>
-              <Logo src="https://camo.githubusercontent.com/0e253d12e92c4661a0688132d034a543efe133dc/68747470733a2f2f63646e2e776f726c64766563746f726c6f676f2e636f6d2f6c6f676f732f747970657363726970742e737667"/>
-              <Logo src="https://cdn.auth0.com/blog/react-js/react.png"/>
-              <Logo src="https://hackr.io/tutorials/electron/logo-electron.svg?ver=1551354757"/>
-              <Logo src="https://vuejs.org/images/logo.png"/>
-              <Logo src="https://jaystack.com/wp-content/uploads/2015/12/nodejs-logo-e1497443346889.png"/>
-              <Logo src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/GraphQL_Logo.svg/2000px-GraphQL_Logo.svg.png" alt=""/>
-              <Logo src="https://seeklogo.com/images/A/apollo-logo-DC7DD3C444-seeklogo.com.png"/>
-              <Logo src="https://user-images.githubusercontent.com/10767740/27283514-9260e192-54ec-11e7-91f9-18550615a7a9.png"/>
+              {props.data.logos.edges.map(({node}, i) => (
+                <Logo>
+                  <Img key={i} fluid={node.childImageSharp.fluid}/>
+                </Logo>
+              ))}
             </Logos>
           </div>
         </HeaderWrapper>
@@ -92,6 +93,17 @@ export default (props) => {
 
 export const listQuery = graphql`
   query ListQuery {
+    logos: allFile(filter: { absolutePath: { regex: "/logos/" } }) {
+      edges {
+        node {
+          childImageSharp {
+            fluid(base64Width: 30) {
+              ...GatsbyImageSharpFluid_tracedSVG
+            }
+          }
+        }
+      }
+    }
     allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
       edges {
         node {
