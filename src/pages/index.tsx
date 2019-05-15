@@ -33,7 +33,6 @@ const Logos = styled.div`
   display: flex;
   padding-top: 20px;
   flex-wrap: wrap;
-  height: 30px;
 `;
 
 const Logo = styled.div`
