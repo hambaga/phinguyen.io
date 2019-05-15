@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e36c907a-dec0-4dd6-9bb5-20c3e9d88926" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/components/avatar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/avatar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/templates/BlogPost/BlogPost.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/BlogPost/BlogPost.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/BlogPost/styled-components.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/BlogPost/styled-components.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -28,11 +29,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/avatar.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="9" column="44" lean-forward="true" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="44" />
+            <state relative-caret-position="220">
+              <caret line="11" column="7" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
@@ -43,11 +44,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/templates/BlogPost/BlogPost.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="419">
-              <caret line="67" column="48" selection-start-line="67" selection-start-column="17" selection-end-line="67" selection-end-column="48" />
-              <folding>
-                <element signature="e#0#31#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="60">
+              <caret line="3" column="63" selection-start-line="3" selection-start-column="63" selection-end-line="3" selection-end-column="63" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/templates/BlogPost/styled-components.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="7" column="2" lean-forward="true" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -67,8 +74,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/layout.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="43" column="17" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
+            <state relative-caret-position="268">
+              <caret line="53" column="26" selection-start-line="53" selection-start-column="26" selection-end-line="53" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -119,6 +126,8 @@
       <find>window.</find>
       <find>reach/router</find>
       <find>avatar</find>
+      <find>code</find>
+      <find>:not</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -156,15 +165,15 @@
         <option value="$PROJECT_DIR$/src/components/layout.tsx" />
         <option value="$PROJECT_DIR$/gatsby-config.js" />
         <option value="$PROJECT_DIR$/schema.graphql" />
-        <option value="$PROJECT_DIR$/src/templates/BlogPost/styled-components.ts" />
-        <option value="$PROJECT_DIR$/src/components/layout.css" />
         <option value="$PROJECT_DIR$/src/components/Header/styled-components.ts" />
         <option value="$PROJECT_DIR$/content/first-post/index.md" />
         <option value="$PROJECT_DIR$/src/components/UIKit/index.ts" />
         <option value="$PROJECT_DIR$/src/pages/index.tsx" />
         <option value="$PROJECT_DIR$/src/components/Header/Header.tsx" />
-        <option value="$PROJECT_DIR$/src/templates/BlogPost/BlogPost.tsx" />
         <option value="$PROJECT_DIR$/src/components/avatar.tsx" />
+        <option value="$PROJECT_DIR$/src/components/layout.css" />
+        <option value="$PROJECT_DIR$/src/templates/BlogPost/BlogPost.tsx" />
+        <option value="$PROJECT_DIR$/src/templates/BlogPost/styled-components.ts" />
       </list>
     </option>
   </component>
@@ -292,18 +301,18 @@
       <workItem from="1557018615654" duration="241000" />
       <workItem from="1557018939101" duration="565000" />
       <workItem from="1557098529778" duration="21000" />
-      <workItem from="1557781456939" duration="40972000" />
+      <workItem from="1557781456939" duration="41573000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49118000" />
+    <option name="totallyTimeSpent" value="49719000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16349542" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16349542" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -319,7 +328,7 @@
       <window_info anchor="bottom" id="GraphQL" order="9" weight="0.25675675" />
       <window_info anchor="bottom" id="TypeScript" order="10" weight="0.32923833" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="12" visible="true" weight="0.24324325" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="12" visible="true" weight="0.24324325" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -571,13 +580,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/BlogPost/styled-components.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="5" column="19" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Header/styled-components.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="326">
@@ -593,13 +595,6 @@
             <element signature="e#0#31#0" expanded="true" />
             <element signature="e#214#258#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/layout.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="43" column="17" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -640,23 +635,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/BlogPost/BlogPost.tsx">
+    <entry file="file://$PROJECT_DIR$/src/components/avatar.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="67" column="48" selection-start-line="67" selection-start-column="17" selection-end-line="67" selection-end-column="48" />
+        <state relative-caret-position="220">
+          <caret line="11" column="7" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/avatar.tsx">
+    <entry file="file://$PROJECT_DIR$/src/components/layout.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" column="44" lean-forward="true" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="44" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="268">
+          <caret line="53" column="26" selection-start-line="53" selection-start-column="26" selection-end-line="53" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/BlogPost/BlogPost.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="3" column="63" selection-start-line="3" selection-start-column="63" selection-end-line="3" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/BlogPost/styled-components.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="7" column="2" lean-forward="true" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
         </state>
       </provider>
     </entry>

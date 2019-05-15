@@ -1,13 +1,9 @@
 import styled, {css} from 'styled-components';
 import {Paper} from '../../components/UIKit';
 
-export const BlogPostWrapper = styled(Paper)`
-  a {
-    color: #468598;
-    
-    &:hover, &:active {
-      color: #70e9ff;
-    }
+export const BlogPostWrapper = styled.div`
+  img {
+    border-radius: 8px;
   }
 `;
 

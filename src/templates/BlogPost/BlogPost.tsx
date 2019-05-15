@@ -37,11 +37,13 @@ const BlogPost = ({data}: Props) => {
         <title>{title}</title>
       </Helmet>
       <Paper noMobile>
-        <Title>{title}</Title>
-        <Date>{format(date, 'MMMM DD, YYYY')}</Date>
-        <Img fluid={image.childImageSharp.fluid} />
-        <ImageCredit>Image by <a rel="noopener noreferrer" target="_blank" href={imageCredit}>{imageAuthor}</a></ImageCredit>
-        <div dangerouslySetInnerHTML={{__html: post.html}}/>
+        <BlogPostWrapper>
+          <Title>{title}</Title>
+          <Date>{format(date, 'MMMM DD, YYYY')}</Date>
+          <Img fluid={image.childImageSharp.fluid} />
+          <ImageCredit>Image by <a rel="noopener noreferrer" target="_blank" href={imageCredit}>{imageAuthor}</a></ImageCredit>
+          <div dangerouslySetInnerHTML={{__html: post.html}}/>
+        </BlogPostWrapper>
       </Paper>
     </Layout>
   )
