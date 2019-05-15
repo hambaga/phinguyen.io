@@ -24,7 +24,7 @@ class App extends React.Component {
 }
 ```
 
-Well, ok, great, but how bad can this really be? I will not go so far as to criticize React's docs ('cause it's freaking awesome), but I felt they could have explained this better. For a long time I tried not to make this particular mistake, safely memoizing context value before passing it to the provider ([and here's a great guide for it](https://kentcdodds.com/blog/how-to-optimize-your-context-value)) without knowing what exactly am I running away from, and often times it gives me feelings of irrational paranoia. It's never good to not know what you're doing, or why you are doing so.
+Well, ok, great, but how bad can this really be? I will not go so far as to criticize React's docs ('cause it's freaking awesome), but I felt they could have explained this better. For a long time I tried not to make this particular mistake, safely memoizing context value before passing it to the provider ([and here's a great guide for it](https://kentcdodds.com/blog/how-to-optimize-your-context-value)) without knowing exactly what problem I'm trying to prevent.
 
 So, let's find out what's really happening. _What exactly is this caveat we are talking about?_
 
@@ -54,9 +54,9 @@ const Foo = () => {
 };
 ```
 
-So this is the behavior that we are trying to avoid. So how do we test if this is bad?
+This is the behavior that the React folks are warning us about. So how do we test if this is bad?
 
-In the React Dev Tool, there's a neat thing called _Highlight Updates_ that we can use to watch for re-renders.
+In the React Dev Extension, there's this nifty little tool called _Highlight Updates_ that we can use to watch for re-renders.
 
 ![Highlight updates](highlight-updates.gif)
 
@@ -93,9 +93,9 @@ However, the result is still the same:
 ![Highlight updates](fail.gif)
 <p class="textDescription">But why? 😱</p>
 
-Well, this is the part where React's Context API kept me up all night long. This whole thing can come across as really weird without a proper explanation.
+Well, this is the part where React's Context API kept me scratching my head. This whole thing can come across as really weird without a proper explanation.
 
-One characteristic of Context is that you can only call a Consumer inside a Provider. But then, the default behavior of React is that whenever a parent component re-renders, every child of that component will re-render along with it. If that is the case then why exactly do we have to memoize the context value when we can't use Consumers outside of Provider, so all child components will end up re-rendering anyway?
+One characteristic of Context is that you can only call a Consumer inside a Provider. But then, the default behavior of React is that whenever a parent component re-renders, every child of that component will re-render along with it. So, since any Consumer is already a child of a Provider and would re-render together anyway, then why exactly do we have to memoize the context value?
 
 Well here's the punch line: **You need to memoize your component!**
 
@@ -106,9 +106,9 @@ Let's recap a little bit. To memoize a component is when you:
 
 Memoizing a component allows it to not re-render alongside its parent component, except when it's own value changes. Most of the time you will be using `PureComponent` and `memo`, both of which calculates re-render via shallow comparison.
 
-So what does this mean in the context of Context? **It means that if you don't memoize the Consumer, it doesn't matter whether you memoize the context value or not.** And since you should **always memoize your components** anyway, the caveat is making much more sense now.
+So what does this mean in the context of Context? **It means that if you don't memoize the context value, what really happens is that it will cancel any memoization effect on a Consumer.** And since you should **always memoize your components**, it makes much more sense to avoid this caveat now.
 
-Now, wrap your `Foo` component with `memo`:
+So, you can wrap your `Foo` component with `memo`:
 ```js
 export default () => {
   const [count, setCount] = useState(0);
@@ -139,15 +139,18 @@ const Foo = memo(() => { // highlight-line
 Now let's test the thing:
 
 ![Highlight updates](win.gif)
-<p class="textDescription">Profit 🎉🎉🎉🎉🎉</p>
+<p class="textDescription">Profit! 🎉</p>
 
 See how the blue highlight on Foo disappears? That means Foo won't re-render anymore unless the context changes.
 
-To recap what just happened: **you have to memoize the Consumers so that when you memoize the context value, any re-render not causing by the context will not notify the memoized Consumers**.
+To recap what just happened, here are the two behaviors that you should understand:
 
-What's equally important to understand is that **if you do memoize your Consumer but does not memoize your context value, the memoization effect on your Consumer will get cancelled out**. Also, **if your Consumer is not memoized, it doesn't matter either way.**
+* **If you memoize the context value but don't memoize the Consumer then your effort would be in vain**. The consumer will end up re-rendering either way.
+* **If you do memoize your Consumer but does not memoize your context value, the memoization effect on your Consumer will get cancelled out**.
 
-So, if we are talking about the _how bad does it get_ perspective, it doesn't sound as catastrophic as when you don't really know what's going on. It would be similar to the times where we don't have `memo` or `PureComponent` to work with. It's good to understand that the lack of Context etiquette will not break your app down, it's not _that_ scary. However, if you wish to bring your React app to the next level, every little optimization counts. The effect of this optimization / caveat will accumulate along with your project's size. If you can obtain these great little habits and pay attention to details, you will be able to save a huge amount of refactor effort and offer your users a consistently excellent UX experience.
+So, if we are talking about the _how bad does it get_ perspective, it doesn't sound as catastrophic as when you don't really know what's going on. It would be similar to when React doesn't have any easy memoization tools like `memo` or `PureComponent`. It's good to understand that the lack of Context etiquette will not break your app or cause some immediate performance damage. It's not _that_ scary.
+
+However, if you wish to bring your React app to the next level, every little optimization counts. The effect of this optimization/caveat will accumulate along with your project's size. If you can obtain these great little habits and pay attention to details, you will be able to save a huge amount of refactor effort and offer your users a consistently excellent UX experience.
 
 ## Understanding the Caveat
 

@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e36c907a-dec0-4dd6-9bb5-20c3e9d88926" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/context-caveat-deep-dive/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/context-caveat-deep-dive/index.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -27,7 +27,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
@@ -39,11 +39,23 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/content/context-caveat-deep-dive/index.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="377">
+                <caret line="152" column="129" lean-forward="true" selection-start-line="152" selection-start-column="129" selection-end-line="152" selection-end-column="129" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/SEO/index.tsx">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="12">
-              <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+              <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
@@ -173,6 +185,7 @@
         <option value="$PROJECT_DIR$/src/components/SEO/index.tsx" />
         <option value="$PROJECT_DIR$/src/pages/index.tsx" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/content/context-caveat-deep-dive/index.md" />
       </list>
     </option>
   </component>
@@ -191,6 +204,17 @@
             <path>
               <item name="phi" type="b2602c69:ProjectViewProjectNode" />
               <item name="phi" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="phi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="phi" type="462c0819:PsiDirectoryNode" />
+              <item name="content" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="phi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="phi" type="462c0819:PsiDirectoryNode" />
+              <item name="content" type="462c0819:PsiDirectoryNode" />
+              <item name="context-caveat-deep-dive" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="phi" type="b2602c69:ProjectViewProjectNode" />
@@ -282,18 +306,18 @@
       <workItem from="1557018615654" duration="241000" />
       <workItem from="1557018939101" duration="565000" />
       <workItem from="1557098529778" duration="21000" />
-      <workItem from="1557781456939" duration="44959000" />
+      <workItem from="1557781456939" duration="46006000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53105000" />
+    <option name="totallyTimeSpent" value="54152000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25158563" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25158563" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -309,7 +333,7 @@
       <window_info anchor="bottom" id="GraphQL" order="9" weight="0.25675675" />
       <window_info anchor="bottom" id="TypeScript" order="10" weight="0.32923833" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="12" visible="true" weight="0.24324325" />
+      <window_info anchor="bottom" id="Terminal" order="12" visible="true" weight="0.24324325" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -561,16 +585,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/content/context-caveat-deep-dive/index.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="83">
-            <caret line="52" column="4" selection-start-line="52" selection-start-column="4" selection-end-line="52" selection-end-column="4" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/layout.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="268">
@@ -636,7 +650,7 @@
     <entry file="file://$PROJECT_DIR$/src/components/SEO/index.tsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="12">
-          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
@@ -658,6 +672,16 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="280">
             <caret line="10" selection-start-line="10" selection-end-line="10" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/context-caveat-deep-dive/index.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="377">
+            <caret line="152" column="129" lean-forward="true" selection-start-line="152" selection-start-column="129" selection-end-line="152" selection-end-column="129" />
           </first_editor>
           <second_editor />
         </state>
