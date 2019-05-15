@@ -41,12 +41,14 @@ template {
   display: none;
 }
 a {
+  color: #468598;
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
+  text-decoration: none;
 }
 a:active,
 a:hover {
-  outline-width: 0;
+  color: #70e9ff;
 }
 abbr[title] {
   border-bottom: none;

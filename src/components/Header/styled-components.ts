@@ -1,9 +1,12 @@
 import styled, {css} from 'styled-components';
 
 export const HeaderGradient = styled.div`
-  height: 150px;
-  padding: 30px;
+  padding: 30px 30px 30px 25px;
   background: linear-gradient(141deg, #9fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+  
+  @media (min-width: 800px) {
+    height: 150px;
+  }
 `;
 
 export const HeaderContentWrapper = styled.div`
@@ -15,12 +18,7 @@ export const HeaderContentWrapper = styled.div`
   a {
     font-size: 1.2rem;
     color: white;
-    font-weight: 600;
-    text-decoration: none;
-    
-    &:hover, &:active {
-      color: #70e9ff;
-    }
+    font-weight: 700;
   }
 `;
 

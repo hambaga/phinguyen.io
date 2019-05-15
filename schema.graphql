@@ -491,7 +491,9 @@ type MarkdownRemarkFields {
 type MarkdownRemarkFrontmatter {
     date: String
     description: String
-    image: String
+    image: File
+    imageAuthor: String
+    imageCredit: String
     tags: [String]
     title: String
 }
@@ -528,7 +530,7 @@ type Query {
     markdownRemark(children: NodeFilterListInput, excerpt: StringQueryOperatorInput, excerptAst: JSONQueryOperatorInput, fields: MarkdownRemarkFieldsFilterInput, fileAbsolutePath: StringQueryOperatorInput, frontmatter: MarkdownRemarkFrontmatterFilterInput, headings: MarkdownHeadingFilterListInput, html: StringQueryOperatorInput, htmlAst: JSONQueryOperatorInput, id: StringQueryOperatorInput, internal: InternalFilterInput, parent: NodeFilterInput, rawMarkdownBody: StringQueryOperatorInput, tableOfContents: StringQueryOperatorInput, timeToRead: IntQueryOperatorInput, wordCount: wordCountFilterInput): MarkdownRemark
     site(buildTime: DateQueryOperatorInput, children: NodeFilterListInput, host: StringQueryOperatorInput, id: StringQueryOperatorInput, internal: InternalFilterInput, parent: NodeFilterInput, pathPrefix: StringQueryOperatorInput, polyfill: BooleanQueryOperatorInput, port: IntQueryOperatorInput, siteMetadata: SiteSiteMetadataFilterInput): Site
     sitePage(children: NodeFilterListInput, component: StringQueryOperatorInput, componentChunkName: StringQueryOperatorInput, componentPath: StringQueryOperatorInput, context: SitePageContextFilterInput, id: StringQueryOperatorInput, internal: InternalFilterInput, internalComponentName: StringQueryOperatorInput, isCreatedByStatefulCreatePages: BooleanQueryOperatorInput, jsonName: StringQueryOperatorInput, parent: NodeFilterInput, path: StringQueryOperatorInput, pluginCreator: SitePluginFilterInput, pluginCreatorId: StringQueryOperatorInput): SitePage
-    sitePlugin(children: NodeFilterListInput, id: StringQueryOperatorInput, internal: InternalFilterInput, name: StringQueryOperatorInput, nodeAPIs: StringQueryOperatorInput, packageJson: SitePluginPackageJsonFilterInput, parent: NodeFilterInput, pluginFilepath: StringQueryOperatorInput, pluginOptions: SitePluginPluginOptionsFilterInput, resolve: StringQueryOperatorInput, ssrAPIs: StringQueryOperatorInput, version: StringQueryOperatorInput): SitePlugin
+    sitePlugin(browserAPIs: StringQueryOperatorInput, children: NodeFilterListInput, id: StringQueryOperatorInput, internal: InternalFilterInput, name: StringQueryOperatorInput, nodeAPIs: StringQueryOperatorInput, packageJson: SitePluginPackageJsonFilterInput, parent: NodeFilterInput, pluginFilepath: StringQueryOperatorInput, pluginOptions: SitePluginPluginOptionsFilterInput, resolve: StringQueryOperatorInput, ssrAPIs: StringQueryOperatorInput, version: StringQueryOperatorInput): SitePlugin
 }
 
 type Site implements Node {
@@ -623,6 +625,7 @@ type SitePageGroupConnection {
 }
 
 type SitePlugin implements Node {
+    browserAPIs: [String]
     children: [Node!]!
     id: ID!
     internal: Internal!
@@ -691,28 +694,39 @@ type SitePluginPackageJsonPeerDependencies {
 
 type SitePluginPluginOptions {
     allExtensions: Boolean
+    backgroundColor: String
     background_color: String
     classPrefix: String
     display: String
     fonts: [SitePluginPluginOptionsFonts]
     icon: String
+    ignoreFileExtensions: [String]
     isTSX: Boolean
+    linkImagesToOriginal: Boolean
+    maxWidth: Int
     name: String
     noInlineHighlight: Boolean
     path: String
     pathCheck: Boolean
+    pathPrefix: String
     plugins: [SitePluginPluginOptionsPlugins]
     short_name: String
+    showCaptions: Boolean
     showLineNumbers: Boolean
     start_url: String
     theme_color: String
+    tracedSVG: Boolean
+    withWebp: Boolean
+    wrapperStyle: String
 }
 
 type SitePluginPluginOptionsFonts {
     family: String
+    variants: [String]
 }
 
 type SitePluginPluginOptionsPlugins {
+    browserAPIs: [String]
     id: String
     name: String
     pluginFilepath: String
@@ -722,9 +736,18 @@ type SitePluginPluginOptionsPlugins {
 }
 
 type SitePluginPluginOptionsPluginsPluginOptions {
+    backgroundColor: String
     classPrefix: String
+    ignoreFileExtensions: [String]
+    linkImagesToOriginal: Boolean
+    maxWidth: Int
     noInlineHighlight: Boolean
+    pathPrefix: String
+    showCaptions: Boolean
     showLineNumbers: Boolean
+    tracedSVG: Boolean
+    withWebp: Boolean
+    wrapperStyle: String
 }
 
 type SiteSiteMetadata {
@@ -1213,7 +1236,56 @@ enum MarkdownRemarkFieldsEnum {
     fileAbsolutePath
     frontmatter___date
     frontmatter___description
-    frontmatter___image
+    frontmatter___imageAuthor
+    frontmatter___imageCredit
+    frontmatter___image___absolutePath
+    frontmatter___image___accessTime
+    frontmatter___image___atime
+    frontmatter___image___atimeMs
+    frontmatter___image___base
+    frontmatter___image___birthTime
+    frontmatter___image___birthtime
+    frontmatter___image___birthtimeMs
+    frontmatter___image___blksize
+    frontmatter___image___blocks
+    frontmatter___image___changeTime
+    frontmatter___image___children
+    frontmatter___image___children___children
+    frontmatter___image___children___id
+    frontmatter___image___ctime
+    frontmatter___image___ctimeMs
+    frontmatter___image___dev
+    frontmatter___image___dir
+    frontmatter___image___ext
+    frontmatter___image___extension
+    frontmatter___image___gid
+    frontmatter___image___id
+    frontmatter___image___ino
+    frontmatter___image___internal___content
+    frontmatter___image___internal___contentDigest
+    frontmatter___image___internal___description
+    frontmatter___image___internal___fieldOwners
+    frontmatter___image___internal___ignoreType
+    frontmatter___image___internal___mediaType
+    frontmatter___image___internal___owner
+    frontmatter___image___internal___type
+    frontmatter___image___mode
+    frontmatter___image___modifiedTime
+    frontmatter___image___mtime
+    frontmatter___image___mtimeMs
+    frontmatter___image___name
+    frontmatter___image___nlink
+    frontmatter___image___parent___children
+    frontmatter___image___parent___id
+    frontmatter___image___prettySize
+    frontmatter___image___publicURL
+    frontmatter___image___rdev
+    frontmatter___image___relativeDirectory
+    frontmatter___image___relativePath
+    frontmatter___image___root
+    frontmatter___image___size
+    frontmatter___image___sourceInstanceName
+    frontmatter___image___uid
     frontmatter___tags
     frontmatter___title
     headings
@@ -1478,6 +1550,7 @@ enum SitePageFieldsEnum {
     parent___parent___parent___id
     path
     pluginCreatorId
+    pluginCreator___browserAPIs
     pluginCreator___children
     pluginCreator___children___children
     pluginCreator___children___children___children
@@ -1536,33 +1609,45 @@ enum SitePageFieldsEnum {
     pluginCreator___parent___parent___id
     pluginCreator___pluginFilepath
     pluginCreator___pluginOptions___allExtensions
+    pluginCreator___pluginOptions___backgroundColor
     pluginCreator___pluginOptions___background_color
     pluginCreator___pluginOptions___classPrefix
     pluginCreator___pluginOptions___display
     pluginCreator___pluginOptions___fonts
     pluginCreator___pluginOptions___fonts___family
+    pluginCreator___pluginOptions___fonts___variants
     pluginCreator___pluginOptions___icon
+    pluginCreator___pluginOptions___ignoreFileExtensions
     pluginCreator___pluginOptions___isTSX
+    pluginCreator___pluginOptions___linkImagesToOriginal
+    pluginCreator___pluginOptions___maxWidth
     pluginCreator___pluginOptions___name
     pluginCreator___pluginOptions___noInlineHighlight
     pluginCreator___pluginOptions___path
     pluginCreator___pluginOptions___pathCheck
+    pluginCreator___pluginOptions___pathPrefix
     pluginCreator___pluginOptions___plugins
+    pluginCreator___pluginOptions___plugins___browserAPIs
     pluginCreator___pluginOptions___plugins___id
     pluginCreator___pluginOptions___plugins___name
     pluginCreator___pluginOptions___plugins___pluginFilepath
     pluginCreator___pluginOptions___plugins___resolve
     pluginCreator___pluginOptions___plugins___version
     pluginCreator___pluginOptions___short_name
+    pluginCreator___pluginOptions___showCaptions
     pluginCreator___pluginOptions___showLineNumbers
     pluginCreator___pluginOptions___start_url
     pluginCreator___pluginOptions___theme_color
+    pluginCreator___pluginOptions___tracedSVG
+    pluginCreator___pluginOptions___withWebp
+    pluginCreator___pluginOptions___wrapperStyle
     pluginCreator___resolve
     pluginCreator___ssrAPIs
     pluginCreator___version
 }
 
 enum SitePluginFieldsEnum {
+    browserAPIs
     children
     children___children
     children___children___children
@@ -1669,30 +1754,50 @@ enum SitePluginFieldsEnum {
     parent___parent___parent___id
     pluginFilepath
     pluginOptions___allExtensions
+    pluginOptions___backgroundColor
     pluginOptions___background_color
     pluginOptions___classPrefix
     pluginOptions___display
     pluginOptions___fonts
     pluginOptions___fonts___family
+    pluginOptions___fonts___variants
     pluginOptions___icon
+    pluginOptions___ignoreFileExtensions
     pluginOptions___isTSX
+    pluginOptions___linkImagesToOriginal
+    pluginOptions___maxWidth
     pluginOptions___name
     pluginOptions___noInlineHighlight
     pluginOptions___path
     pluginOptions___pathCheck
+    pluginOptions___pathPrefix
     pluginOptions___plugins
+    pluginOptions___plugins___browserAPIs
     pluginOptions___plugins___id
     pluginOptions___plugins___name
     pluginOptions___plugins___pluginFilepath
+    pluginOptions___plugins___pluginOptions___backgroundColor
     pluginOptions___plugins___pluginOptions___classPrefix
+    pluginOptions___plugins___pluginOptions___ignoreFileExtensions
+    pluginOptions___plugins___pluginOptions___linkImagesToOriginal
+    pluginOptions___plugins___pluginOptions___maxWidth
     pluginOptions___plugins___pluginOptions___noInlineHighlight
+    pluginOptions___plugins___pluginOptions___pathPrefix
+    pluginOptions___plugins___pluginOptions___showCaptions
     pluginOptions___plugins___pluginOptions___showLineNumbers
+    pluginOptions___plugins___pluginOptions___tracedSVG
+    pluginOptions___plugins___pluginOptions___withWebp
+    pluginOptions___plugins___pluginOptions___wrapperStyle
     pluginOptions___plugins___resolve
     pluginOptions___plugins___version
     pluginOptions___short_name
+    pluginOptions___showCaptions
     pluginOptions___showLineNumbers
     pluginOptions___start_url
     pluginOptions___theme_color
+    pluginOptions___tracedSVG
+    pluginOptions___withWebp
+    pluginOptions___wrapperStyle
     resolve
     ssrAPIs
     version
@@ -1984,7 +2089,9 @@ input MarkdownRemarkFilterInput {
 input MarkdownRemarkFrontmatterFilterInput {
     date: StringQueryOperatorInput
     description: StringQueryOperatorInput
-    image: StringQueryOperatorInput
+    image: FileFilterInput
+    imageAuthor: StringQueryOperatorInput
+    imageCredit: StringQueryOperatorInput
     tags: StringQueryOperatorInput
     title: StringQueryOperatorInput
 }
@@ -2057,6 +2164,7 @@ input SitePageSortInput {
 }
 
 input SitePluginFilterInput {
+    browserAPIs: StringQueryOperatorInput
     children: NodeFilterListInput
     id: StringQueryOperatorInput
     internal: InternalFilterInput
@@ -2113,25 +2221,35 @@ input SitePluginPackageJsonPeerDependenciesFilterListInput {
 
 input SitePluginPluginOptionsFilterInput {
     allExtensions: BooleanQueryOperatorInput
+    backgroundColor: StringQueryOperatorInput
     background_color: StringQueryOperatorInput
     classPrefix: StringQueryOperatorInput
     display: StringQueryOperatorInput
     fonts: SitePluginPluginOptionsFontsFilterListInput
     icon: StringQueryOperatorInput
+    ignoreFileExtensions: StringQueryOperatorInput
     isTSX: BooleanQueryOperatorInput
+    linkImagesToOriginal: BooleanQueryOperatorInput
+    maxWidth: IntQueryOperatorInput
     name: StringQueryOperatorInput
     noInlineHighlight: BooleanQueryOperatorInput
     path: StringQueryOperatorInput
     pathCheck: BooleanQueryOperatorInput
+    pathPrefix: StringQueryOperatorInput
     plugins: SitePluginPluginOptionsPluginsFilterListInput
     short_name: StringQueryOperatorInput
+    showCaptions: BooleanQueryOperatorInput
     showLineNumbers: BooleanQueryOperatorInput
     start_url: StringQueryOperatorInput
     theme_color: StringQueryOperatorInput
+    tracedSVG: BooleanQueryOperatorInput
+    withWebp: BooleanQueryOperatorInput
+    wrapperStyle: StringQueryOperatorInput
 }
 
 input SitePluginPluginOptionsFontsFilterInput {
     family: StringQueryOperatorInput
+    variants: StringQueryOperatorInput
 }
 
 input SitePluginPluginOptionsFontsFilterListInput {
@@ -2139,6 +2257,7 @@ input SitePluginPluginOptionsFontsFilterListInput {
 }
 
 input SitePluginPluginOptionsPluginsFilterInput {
+    browserAPIs: StringQueryOperatorInput
     id: StringQueryOperatorInput
     name: StringQueryOperatorInput
     pluginFilepath: StringQueryOperatorInput
@@ -2152,9 +2271,18 @@ input SitePluginPluginOptionsPluginsFilterListInput {
 }
 
 input SitePluginPluginOptionsPluginsPluginOptionsFilterInput {
+    backgroundColor: StringQueryOperatorInput
     classPrefix: StringQueryOperatorInput
+    ignoreFileExtensions: StringQueryOperatorInput
+    linkImagesToOriginal: BooleanQueryOperatorInput
+    maxWidth: IntQueryOperatorInput
     noInlineHighlight: BooleanQueryOperatorInput
+    pathPrefix: StringQueryOperatorInput
+    showCaptions: BooleanQueryOperatorInput
     showLineNumbers: BooleanQueryOperatorInput
+    tracedSVG: BooleanQueryOperatorInput
+    withWebp: BooleanQueryOperatorInput
+    wrapperStyle: StringQueryOperatorInput
 }
 
 input SitePluginSortInput {

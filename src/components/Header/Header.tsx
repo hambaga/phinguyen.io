@@ -13,16 +13,16 @@ interface Site {
 }
 
 const sites: Site[] = [
-  {label: 'Blog', url: '/blog'},
-  {label: 'About Me', url: '/me'}
 ];
 
 const Header = ({siteTitle = ''}: Props) => (
   <HeaderGradient>
     <HeaderContentWrapper>
-      <AvatarWrapper>
-        <Avatar/>
-      </AvatarWrapper>
+      {window.location.href.length - window.location.origin.length > 1 && (
+        <AvatarWrapper>
+          <Avatar/>
+        </AvatarWrapper>
+      )}
       <Link to="/">{siteTitle}</Link>
       <div/>
       <NavWrapper>

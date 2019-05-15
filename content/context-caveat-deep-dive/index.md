@@ -2,11 +2,11 @@
 title: A closer look at the caveat of Context API
 description: This post is related to the gatsbyjs
 date: '2019-3-13'
-image: ''
+image: cover.jpg
+imageAuthor: Rodion Kutsaev
+imageCredit: https://unsplash.com/photos/F573ZRbKOEw
 tags: ['javascript','react', 'context-api']
 ---
-
-## Context's Caveat
 
 If you are a performance nut like me, you'd probably be at some point hesitant about using React's Context API. At the bottom of its [documentation](https://reactjs.org/docs/context.html#caveats), there is a little _Caveat_ section that says:
 

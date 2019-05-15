@@ -2,35 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e36c907a-dec0-4dd6-9bb5-20c3e9d88926" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/content/first-post/bug.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/first-post/fail.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/first-post/highlight-updates.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/first-post/index.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/first-post/tuple.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/first-post/win.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Header/Header.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Header/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Header/styled-components.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/avatar.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/favicon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/templates/BlogPost/BlogPost.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/templates/BlogPost/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/templates/BlogPost/styled-components.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UIKit/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dictionaries/phi.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/phi.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gatsby-browser.js" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-browser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/first-post/bug.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/content/context-caveat-deep-dive/bug.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/first-post/fail.gif" beforeDir="false" afterPath="$PROJECT_DIR$/content/context-caveat-deep-dive/fail.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/first-post/highlight-updates.gif" beforeDir="false" afterPath="$PROJECT_DIR$/content/context-caveat-deep-dive/highlight-updates.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/first-post/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/context-caveat-deep-dive/index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/first-post/tuple.gif" beforeDir="false" afterPath="$PROJECT_DIR$/content/context-caveat-deep-dive/tuple.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/first-post/win.gif" beforeDir="false" afterPath="$PROJECT_DIR$/content/context-caveat-deep-dive/win.gif" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gatsby-config.js" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gatsby-node.js" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-node.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/schema.graphql" beforeDir="false" afterPath="$PROJECT_DIR$/schema.graphql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/image.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/avatar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/styled-components.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/styled-components.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/styled-components.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/BlogPost/BlogPost.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/BlogPost/BlogPost.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/BlogPost/styled-components.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/BlogPost/styled-components.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -46,54 +34,23 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Header/Header.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="20">
-              <caret line="1" column="21" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gatsby-config.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="389">
-              <caret line="21" column="27" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
+            <state relative-caret-position="294">
+              <caret line="20" column="70" selection-start-line="20" selection-start-column="70" selection-end-line="20" selection-end-column="70" />
+              <folding>
+                <element signature="e#0#31#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/layout.tsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="11" column="28" lean-forward="true" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
-              <folding>
-                <element signature="e#0#31#0" expanded="true" />
-                <element signature="e#214#258#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/templates/BlogPost/BlogPost.tsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="620">
-              <caret line="31" column="52" selection-start-line="31" selection-start-column="52" selection-end-line="31" selection-end-column="52" />
-              <folding>
-                <element signature="e#0#31#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pages/index.tsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
-              <folding>
-                <element signature="e#0#31#0" expanded="true" />
-              </folding>
+        <entry file="file://$PROJECT_DIR$/content/context-caveat-deep-dive/index.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="172">
+                <caret line="19" column="18" lean-forward="true" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -101,8 +58,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/layout.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1031">
-              <caret line="332" column="32" selection-start-line="332" selection-start-column="32" selection-end-line="332" selection-end-column="32" />
+            <state relative-caret-position="196">
+              <caret line="43" column="17" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pages/index.tsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1069">
+              <caret line="54" column="27" lean-forward="true" selection-start-line="54" selection-start-column="27" selection-end-line="54" selection-end-column="27" />
+              <folding>
+                <element signature="e#0#31#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/UIKit/index.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="400">
+              <caret line="20" column="4" lean-forward="true" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -124,6 +102,11 @@
       <find>bug.j</find>
       <find>public</find>
       <find>blockq</find>
+      <find>color: bla</find>
+      <find>color: bl</find>
+      <find>date-fns</find>
+      <find>a {</find>
+      <find>my name is</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -147,7 +130,6 @@
         <option value="$PROJECT_DIR$/src/components/SEO/index.tsx" />
         <option value="$PROJECT_DIR$/src/components/header.tsx" />
         <option value="$PROJECT_DIR$/.graphqlconfig" />
-        <option value="$PROJECT_DIR$/schema.graphql" />
         <option value="$PROJECT_DIR$/src/templates/blog-post.tsx" />
         <option value="$PROJECT_DIR$/src/templates/BlogPost/index.tsx" />
         <option value="$PROJECT_DIR$/gatsby-node.js" />
@@ -156,19 +138,21 @@
         <option value="$PROJECT_DIR$/src/components/Navigation/index.ts" />
         <option value="$PROJECT_DIR$/src/pages/index.css" />
         <option value="$PROJECT_DIR$/gatsby-browser.js" />
-        <option value="$PROJECT_DIR$/content/first-post/index.md" />
         <option value="$PROJECT_DIR$/src/components/Navigation/Navigation.tsx" />
         <option value="$PROJECT_DIR$/src/components/Navigation/styled-components.ts" />
-        <option value="$PROJECT_DIR$/src/templates/BlogPost/styled-components.ts" />
         <option value="$PROJECT_DIR$/src/components/image.tsx" />
         <option value="$PROJECT_DIR$/src/components/avatar.tsx" />
-        <option value="$PROJECT_DIR$/src/components/layout.css" />
-        <option value="$PROJECT_DIR$/src/pages/index.tsx" />
-        <option value="$PROJECT_DIR$/src/components/Header/styled-components.ts" />
-        <option value="$PROJECT_DIR$/gatsby-config.js" />
-        <option value="$PROJECT_DIR$/src/components/Header/Header.tsx" />
-        <option value="$PROJECT_DIR$/src/templates/BlogPost/BlogPost.tsx" />
         <option value="$PROJECT_DIR$/src/components/layout.tsx" />
+        <option value="$PROJECT_DIR$/gatsby-config.js" />
+        <option value="$PROJECT_DIR$/schema.graphql" />
+        <option value="$PROJECT_DIR$/src/templates/BlogPost/styled-components.ts" />
+        <option value="$PROJECT_DIR$/src/components/layout.css" />
+        <option value="$PROJECT_DIR$/src/components/Header/styled-components.ts" />
+        <option value="$PROJECT_DIR$/content/first-post/index.md" />
+        <option value="$PROJECT_DIR$/src/components/Header/Header.tsx" />
+        <option value="$PROJECT_DIR$/src/components/UIKit/index.ts" />
+        <option value="$PROJECT_DIR$/src/templates/BlogPost/BlogPost.tsx" />
+        <option value="$PROJECT_DIR$/src/pages/index.tsx" />
       </list>
     </option>
   </component>
@@ -191,13 +175,50 @@
             <path>
               <item name="phi" type="b2602c69:ProjectViewProjectNode" />
               <item name="phi" type="462c0819:PsiDirectoryNode" />
+              <item name="content" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="phi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="phi" type="462c0819:PsiDirectoryNode" />
+              <item name="content" type="462c0819:PsiDirectoryNode" />
+              <item name="context-caveat-deep-dive" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="phi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="phi" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="phi" type="b2602c69:ProjectViewProjectNode" />
               <item name="phi" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="phi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="phi" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Header" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="phi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="phi" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="phi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="phi" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="phi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="phi" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="BlogPost" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -265,12 +286,12 @@
       <workItem from="1557018615654" duration="241000" />
       <workItem from="1557018939101" duration="565000" />
       <workItem from="1557098529778" duration="21000" />
-      <workItem from="1557781456939" duration="33462000" />
+      <workItem from="1557781456939" duration="39790000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41608000" />
+    <option name="totallyTimeSpent" value="47936000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -292,7 +313,7 @@
       <window_info anchor="bottom" id="GraphQL" order="9" weight="0.25675675" />
       <window_info anchor="bottom" id="TypeScript" order="10" weight="0.32923833" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="12" weight="0.24324325" />
+      <window_info anchor="bottom" id="Terminal" order="12" visible="true" weight="0.24324325" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -384,13 +405,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/gatsby-image/index.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="28" column="2" selection-start-line="28" selection-start-column="2" selection-end-line="28" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/images/gatsby-icon.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -401,20 +415,6 @@
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.graphqlconfig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="13" column="3" lean-forward="true" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/schema.graphql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -487,10 +487,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/content/first-post/highlight-updates.gif">
+    <entry file="file://$PROJECT_DIR$/content/context-caveat-deep-dive/highlight-updates.gif">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/content/first-post/bug.jpg">
+    <entry file="file://$PROJECT_DIR$/content/context-caveat-deep-dive/bug.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/public/static/147bf875541dc8f29234c7780473a1f7/5413e/bug.jpg">
@@ -517,23 +517,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/content/first-post/index.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="725">
-            <caret line="276" selection-start-line="276" selection-end-line="276" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/BlogPost/styled-components.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/avatar.tsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="460">
@@ -541,13 +524,6 @@
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/layout.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1031">
-          <caret line="332" column="32" selection-start-line="332" selection-start-column="32" selection-end-line="332" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -568,58 +544,113 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Header/Header.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="1" column="21" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gatsby-config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="21" column="27" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/index.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/images/favico.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Header/styled-components.ts">
+    <entry file="file://$PROJECT_DIR$/gatsby-config.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="820">
-          <caret line="41" column="18" selection-start-line="41" selection-start-column="18" selection-end-line="41" selection-end-column="18" />
+        <state relative-caret-position="120">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/BlogPost/BlogPost.tsx">
+    <entry file="file://$PROJECT_DIR$/schema.graphql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="620">
-          <caret line="31" column="52" selection-start-line="31" selection-start-column="52" selection-end-line="31" selection-end-column="52" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="220">
+          <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.graphqlconfig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="13" column="3" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/gatsby-image/index.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="46" column="21" selection-start-line="46" selection-start-column="21" selection-end-line="46" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/BlogPost/styled-components.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="5" column="19" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Header/styled-components.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/layout.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" column="28" lean-forward="true" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+        <state relative-caret-position="226">
+          <caret line="25" column="6" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
             <element signature="e#214#258#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/layout.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="43" column="17" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/BlogPost/BlogPost.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="33" column="10" lean-forward="true" selection-start-line="33" selection-start-column="10" selection-end-line="33" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/UIKit/index.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="20" column="4" lean-forward="true" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Header/Header.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="20" column="70" selection-start-line="20" selection-start-column="70" selection-end-line="20" selection-end-column="70" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/index.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1069">
+          <caret line="54" column="27" lean-forward="true" selection-start-line="54" selection-start-column="27" selection-end-line="54" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/context-caveat-deep-dive/index.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="172">
+            <caret line="19" column="18" lean-forward="true" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
