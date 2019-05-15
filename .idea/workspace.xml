@@ -2,23 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e36c907a-dec0-4dd6-9bb5-20c3e9d88926" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/UIKit/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/phi.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/phi.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/first-post/bug.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/content/context-caveat-deep-dive/bug.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/first-post/fail.gif" beforeDir="false" afterPath="$PROJECT_DIR$/content/context-caveat-deep-dive/fail.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/first-post/highlight-updates.gif" beforeDir="false" afterPath="$PROJECT_DIR$/content/context-caveat-deep-dive/highlight-updates.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/first-post/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/context-caveat-deep-dive/index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/first-post/tuple.gif" beforeDir="false" afterPath="$PROJECT_DIR$/content/context-caveat-deep-dive/tuple.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/first-post/win.gif" beforeDir="false" afterPath="$PROJECT_DIR$/content/context-caveat-deep-dive/win.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gatsby-config.js" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/schema.graphql" beforeDir="false" afterPath="$PROJECT_DIR$/schema.graphql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/styled-components.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/styled-components.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/BlogPost/BlogPost.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/BlogPost/BlogPost.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/BlogPost/styled-components.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/BlogPost/styled-components.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -31,11 +16,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/Header/Header.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="20" column="70" selection-start-line="20" selection-start-column="70" selection-end-line="20" selection-end-column="70" />
+            <state relative-caret-position="304">
+              <caret line="25" column="26" lean-forward="true" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
@@ -43,12 +28,12 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/content/context-caveat-deep-dive/index.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="172">
-                <caret line="19" column="18" lean-forward="true" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
+              <first_editor relative-caret-position="83">
+                <caret line="52" column="4" selection-start-line="52" selection-start-column="4" selection-end-line="52" selection-end-column="4" />
               </first_editor>
               <second_editor />
             </state>
@@ -68,7 +53,7 @@
         <entry file="file://$PROJECT_DIR$/src/pages/index.tsx">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1069">
-              <caret line="54" column="27" lean-forward="true" selection-start-line="54" selection-start-column="27" selection-end-line="54" selection-end-column="27" />
+              <caret line="54" column="27" selection-start-line="54" selection-start-column="27" selection-end-line="54" selection-end-column="27" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
@@ -80,7 +65,7 @@
         <entry file="file://$PROJECT_DIR$/src/components/UIKit/index.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="400">
-              <caret line="20" column="4" lean-forward="true" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
+              <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -107,6 +92,8 @@
       <find>date-fns</find>
       <find>a {</find>
       <find>my name is</find>
+      <find>window.</find>
+      <find>reach/router</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -149,10 +136,10 @@
         <option value="$PROJECT_DIR$/src/components/layout.css" />
         <option value="$PROJECT_DIR$/src/components/Header/styled-components.ts" />
         <option value="$PROJECT_DIR$/content/first-post/index.md" />
-        <option value="$PROJECT_DIR$/src/components/Header/Header.tsx" />
         <option value="$PROJECT_DIR$/src/components/UIKit/index.ts" />
         <option value="$PROJECT_DIR$/src/templates/BlogPost/BlogPost.tsx" />
         <option value="$PROJECT_DIR$/src/pages/index.tsx" />
+        <option value="$PROJECT_DIR$/src/components/Header/Header.tsx" />
       </list>
     </option>
   </component>
@@ -182,6 +169,17 @@
               <item name="phi" type="462c0819:PsiDirectoryNode" />
               <item name="content" type="462c0819:PsiDirectoryNode" />
               <item name="context-caveat-deep-dive" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="phi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="phi" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="phi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="phi" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="@types" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="phi" type="b2602c69:ProjectViewProjectNode" />
@@ -286,12 +284,12 @@
       <workItem from="1557018615654" duration="241000" />
       <workItem from="1557018939101" duration="565000" />
       <workItem from="1557098529778" duration="21000" />
-      <workItem from="1557781456939" duration="39790000" />
+      <workItem from="1557781456939" duration="40414000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47936000" />
+    <option name="totallyTimeSpent" value="48560000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -620,24 +618,14 @@
     <entry file="file://$PROJECT_DIR$/src/components/UIKit/index.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
-          <caret line="20" column="4" lean-forward="true" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Header/Header.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="20" column="70" selection-start-line="20" selection-start-column="70" selection-end-line="20" selection-end-column="70" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
+          <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/index.tsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1069">
-          <caret line="54" column="27" lean-forward="true" selection-start-line="54" selection-start-column="27" selection-end-line="54" selection-end-column="27" />
+          <caret line="54" column="27" selection-start-line="54" selection-start-column="27" selection-end-line="54" selection-end-column="27" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
@@ -647,10 +635,20 @@
     <entry file="file://$PROJECT_DIR$/content/context-caveat-deep-dive/index.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="172">
-            <caret line="19" column="18" lean-forward="true" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
+          <first_editor relative-caret-position="83">
+            <caret line="52" column="4" selection-start-line="52" selection-start-column="4" selection-end-line="52" selection-end-column="4" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Header/Header.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="25" column="26" lean-forward="true" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

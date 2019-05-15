@@ -2,6 +2,7 @@ import * as React from 'react';
 import {AvatarWrapper, HeaderContentWrapper, HeaderGradient, NavWrapper} from './styled-components';
 import Avatar from '../avatar';
 import {Link} from 'gatsby';
+import {Location} from '@reach/router';
 
 interface Props {
   siteTitle?: string;
@@ -18,11 +19,14 @@ const sites: Site[] = [
 const Header = ({siteTitle = ''}: Props) => (
   <HeaderGradient>
     <HeaderContentWrapper>
-      {window.location.href.length - window.location.origin.length > 1 && (
-        <AvatarWrapper>
-          <Avatar/>
-        </AvatarWrapper>
-      )}
+      <Location>
+        {({location}) => location.pathname !== '/' && (
+          <AvatarWrapper>
+            <Avatar/>
+          </AvatarWrapper>
+        )}
+      </Location>
+
       <Link to="/">{siteTitle}</Link>
       <div/>
       <NavWrapper>
