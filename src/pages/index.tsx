@@ -42,8 +42,12 @@ const Logo = styled.div`
   margin: 5px;
 `;
 
+const Date = styled.span`
+  font-size: 0.9rem;
+  color: grey;
+`;
+
 export default (props) => {
-  console.log(props.data.logos);
   const postList = props.data.allMarkdownRemark;
 
   return (
@@ -77,7 +81,7 @@ export default (props) => {
             <Link to={node.fields.slug}>
               <h3>{node.frontmatter.title}</h3>
             </Link>
-            <span>{format(node.frontmatter.date, 'MMMM, DD, YYYY')}</span>
+            <Date>{format(node.frontmatter.date, 'MMMM, DD, YYYY')}</Date>
             <p>{node.excerpt + ' '}
               <Link to={node.fields.slug}>
                 Read more

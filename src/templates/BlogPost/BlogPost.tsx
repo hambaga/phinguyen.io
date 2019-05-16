@@ -6,6 +6,7 @@ import {format} from 'date-fns';
 import Helmet from 'react-helmet';
 import Img from 'gatsby-image';
 import {Paper} from '../../components/UIKit';
+import SEO from '../../components/SEO';
 
 interface Props {
   data: {
@@ -13,6 +14,7 @@ interface Props {
       html: string;
       excerpt: string;
       frontmatter: {
+        tags: string[];
         title: string;
         date: string;
         imageCredit: string;
@@ -29,13 +31,11 @@ interface Props {
 
 const BlogPost = ({data}: Props) => {
   const post = data.markdownRemark;
-  const {title, date, imageAuthor, image, imageCredit} = post.frontmatter;
+  const {title, date, imageAuthor, image, imageCredit, tags} = post.frontmatter;
 
   return (
     <Layout>
-      <Helmet>
-        <title>{title}</title>
-      </Helmet>
+      <SEO title={title} keywords={tags}/>
       <Paper noMobile>
         <BlogPostWrapper>
           <Title>{title}</Title>
@@ -57,6 +57,7 @@ export const query = graphql`
       html
       excerpt
       frontmatter {
+        tags
         title
         date
         imageCredit
