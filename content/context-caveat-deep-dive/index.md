@@ -1,6 +1,6 @@
 ---
 title: A closer look at the caveat of Context API
-description: This post is related to the gatsbyjs
+description: This post talks about React's Context API and the logic behind its caveat as mentioned on React's official documentation.
 date: '2019-3-13'
 image: cover.jpg
 imageAuthor: Rodion Kutsaev
@@ -204,6 +204,8 @@ But when you are planning to make a giant reducer with a complicated state and l
 
 ```js
 // BAD EXAMPLE, DO NOT FOLLOW
+// BAD EXAMPLE, DO NOT FOLLOW
+// BAD EXAMPLE, DO NOT FOLLOW
 export default () => {
   const reducerTuple = useReducer(reducer, initialState);
   
@@ -218,19 +220,24 @@ export default () => {
 And then use it like a global reducer:
 
 ```js
+// BAD EXAMPLE, DO NOT FOLLOW
+// BAD EXAMPLE, DO NOT FOLLOW
+// BAD EXAMPLE, DO NOT FOLLOW
 export default () => {
-  const [{foo}, dispatch] = useContext(Context);
+  const [{counter}, dispatch] = useContext(Context);
   
   return (
     <div>
       <p>{foo}</p>
-      <button onClick={() => dispatch(foo + 1)}>Set Foo</button>
+      <button onClick={() => dispatch({type: 'SET_FOO', payload: counter + 1})}>
+        Set Foo
+      </button>
     </div>
   );
 };
 ```
 
-Now this might seem like a good idea, **well, it's not**. I don't know if this has been mentioned anywhere, but for `useReducer`, **the tuple that holds the state and the dispatch will change on every render**. Why this doesn't matter in a normal functional component, putting the tuple as a context value will trigger the caveat that we discussed above. This also applies to `useState`, although it's less likely that anyone would use the state tuple as the value.
+Now this might seem like a good idea, **well, it's not**. I don't know if this has been mentioned anywhere, but for `useReducer`, **the tuple that holds the state and the dispatch will change on every render**. While this doesn't matter in a normal functional component, putting the tuple as a context value will trigger the caveat that we discussed above. This also applies to `useState`, although it's less likely that anyone would use the state tuple as the value.
 
 ```js
 export default () => {

@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e36c907a-dec0-4dd6-9bb5-20c3e9d88926" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/content/mighty-mighty-memoization/cover.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/mighty-mighty-memoization/index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/context-caveat-deep-dive/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/context-caveat-deep-dive/index.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/templates/BlogPost/BlogPost.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/BlogPost/BlogPost.tsx" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -20,8 +23,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/index.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="54" column="72" lean-forward="true" selection-start-line="54" selection-start-column="6" selection-end-line="54" selection-end-column="72" />
+            <state relative-caret-position="2180">
+              <caret line="109" column="41" selection-start-line="109" selection-start-column="37" selection-end-line="109" selection-end-column="41" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
@@ -29,11 +32,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/templates/BlogPost/BlogPost.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="37" column="40" selection-start-line="37" selection-start-column="40" selection-end-line="37" selection-end-column="40" />
+            <state relative-caret-position="680">
+              <caret line="34" selection-start-line="34" selection-end-line="34" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
@@ -45,8 +48,20 @@
         <entry file="file://$PROJECT_DIR$/content/context-caveat-deep-dive/index.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="3540">
-                <caret line="152" column="377" selection-start-line="152" selection-start-column="377" selection-end-line="152" selection-end-column="377" />
+              <first_editor relative-caret-position="-357">
+                <caret line="246" selection-start-line="246" selection-end-line="246" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/content/mighty-mighty-memoization/index.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="-6529">
+                <caret line="6" column="52" lean-forward="true" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="52" />
               </first_editor>
               <second_editor />
             </state>
@@ -101,6 +116,10 @@
       <find>kick off your</find>
       <find>title</find>
       <find>console.log</find>
+      <find>it's not a pr</find>
+      <find>one-li</find>
+      <find>one-liner</find>
+      <find>why this</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -145,10 +164,11 @@
         <option value="$PROJECT_DIR$/gatsby-config.js" />
         <option value="$PROJECT_DIR$/src/components/SEO/index.tsx" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/content/context-caveat-deep-dive/index.md" />
         <option value="$PROJECT_DIR$/src/components/UIKit/index.ts" />
-        <option value="$PROJECT_DIR$/src/pages/index.tsx" />
         <option value="$PROJECT_DIR$/src/templates/BlogPost/BlogPost.tsx" />
+        <option value="$PROJECT_DIR$/src/pages/index.tsx" />
+        <option value="$PROJECT_DIR$/content/mighty-mighty-memoization/index.md" />
+        <option value="$PROJECT_DIR$/content/context-caveat-deep-dive/index.md" />
       </list>
     </option>
   </component>
@@ -161,7 +181,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -183,26 +202,13 @@
             <path>
               <item name="phi" type="b2602c69:ProjectViewProjectNode" />
               <item name="phi" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="content" type="462c0819:PsiDirectoryNode" />
+              <item name="mighty-mighty-memoization" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="phi" type="b2602c69:ProjectViewProjectNode" />
               <item name="phi" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="phi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="phi" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="UIKit" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="phi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="phi" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="phi" type="b2602c69:ProjectViewProjectNode" />
@@ -210,29 +216,17 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="phi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="phi" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="phi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="phi" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="BlogPost" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/images/logos" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/content/mighty-mighty-memoization" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -243,23 +237,23 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
-    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Other File Types" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/images/logos" />
-      <recent name="$PROJECT_DIR$/src/images" />
-      <recent name="$PROJECT_DIR$/content/first-post" />
-      <recent name="$PROJECT_DIR$/src/components/Header" />
-      <recent name="$PROJECT_DIR$/src/templates/BlogPost" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/components/header" />
       <recent name="$PROJECT_DIR$/src/components/index" />
       <recent name="$PROJECT_DIR$/src/pages" />
       <recent name="$PROJECT_DIR$/src/components/SEO" />
       <recent name="$PROJECT_DIR$/src/pages/404" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/content/mighty-mighty-memoization" />
+      <recent name="$PROJECT_DIR$/src/images/logos" />
+      <recent name="$PROJECT_DIR$/src/images" />
+      <recent name="$PROJECT_DIR$/content/first-post" />
+      <recent name="$PROJECT_DIR$/src/components/Header" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -291,18 +285,19 @@
       <workItem from="1557098529778" duration="21000" />
       <workItem from="1557781456939" duration="47055000" />
       <workItem from="1557941458522" duration="10000" />
-      <workItem from="1557972851765" duration="317000" />
+      <workItem from="1557972851765" duration="15788000" />
+      <workItem from="1558113049262" duration="1055000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55528000" />
+    <option name="totallyTimeSpent" value="72054000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25158563" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17124736" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -328,15 +323,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/node_modules/@types/react/index.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.prettierrc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
@@ -581,10 +567,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/UIKit/index.ts">
+    <entry file="file://$PROJECT_DIR$/node_modules/@types/react/index.d.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        <state relative-caret-position="260">
+          <caret line="1101" column="14" selection-start-line="1101" selection-start-column="14" selection-end-line="1101" selection-end-column="14" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/index.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2180">
+          <caret line="109" column="41" selection-start-line="109" selection-start-column="37" selection-end-line="109" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/BlogPost/BlogPost.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -595,33 +604,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/index.tsx">
+    <entry file="file://$PROJECT_DIR$/src/components/UIKit/index.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="54" column="72" lean-forward="true" selection-start-line="54" selection-start-column="6" selection-end-line="54" selection-end-column="72" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="440">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/content/context-caveat-deep-dive/index.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="3540">
-            <caret line="152" column="377" selection-start-line="152" selection-start-column="377" selection-end-line="152" selection-end-column="377" />
+          <first_editor relative-caret-position="-357">
+            <caret line="246" selection-start-line="246" selection-end-line="246" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/BlogPost/BlogPost.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="37" column="40" selection-start-line="37" selection-start-column="40" selection-end-line="37" selection-end-column="40" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
+    <entry file="file://$PROJECT_DIR$/content/mighty-mighty-memoization/index.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="-6529">
+            <caret line="6" column="52" lean-forward="true" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="52" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

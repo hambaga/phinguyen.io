@@ -46,7 +46,7 @@ const BlogPost = ({data}: Props) => {
         </BlogPostWrapper>
       </Paper>
     </Layout>
-  )
+  );
 };
 
 export default BlogPost;
