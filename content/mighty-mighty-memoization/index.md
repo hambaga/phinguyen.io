@@ -401,10 +401,75 @@ class Butt extends React.Component {
 }
 ```
 
-So what's going on here? Before [React 16.8.0](https://reactjs.org/blog/2019/02/06/react-v16.8.0.html), functional components are mostly used for simple stateless components with minimal logic and optimal for props representation (which is why React.SFC used to be a thing). Here are a few reasons:
+So what's going on here? Before [React 16.8.0](https://reactjs.org/blog/2019/02/06/react-v16.8.0.html), functional components are mostly used for simple stateless components with minimal logic and relies on props (which is why React.SFC used to be a thing). Here are a few reasons:
 
 - Before hooks, there is no way to implement state inside a functional component, but a functional component can still be reactive with props.
-- **An entire functional component is equivalent to an empty Class component with a render() function containing the same content.** This means: **on every re-render, the entire content of a functional component will be recalled.**
+- **An entire functional component is equivalent to an empty Class component with a render() function containing the same content.** This means: **on every re-render, the entire body of a functional component will be recalled.**
 - Notice the `handleClick` event handler. Normally you can memoize the handler in the body of a class component, but you cannot do so with a functional component since the handler depends on the props (and you can still memoize a propless handler outside of the component).
+
+And then, just like that, 16.8.0 waltzed in and changed the entire game. When `useState` were to become the next standard for state management, the React team were obliged to introduce a way to optimize values inside a stateful functional component, and that leads us to `useMemo`. The only difference is that, `useMemo` can do much more than what a class component could do, and finally feels like a well-made feature instead of tricks and gimmicks.
+
+I won't try to explain how these hooks work in a beginner's perspective - [the documentation](https://reactjs.org/docs/hooks-intro.html) would certainly do it better for me. If you already know how the gist of how these hooks work, I will now dive right in with an intermediate example:
+
+```js
+import React, {useMemo, useState, useCallback} from 'react';
+
+const Field = ({disabled}) => {    
+  const [message, setMessage] = useState('');
+  
+  const handleAlert = useMemo(() => {
+    if (disabled) {
+      return undefined;
+    }
+    return () => alert(message);
+  }, [message, disabled]);
+  
+  const handleFieldChange = useCallback((event) => {
+    setMessage(event.target.value);
+  }, []);
+    
+  return (
+    <div>
+      <p>
+        <button
+          onClick={handleAlert}
+          disabled={disabled}
+        >
+          Display Message
+        </button>
+      </p>
+      <textarea
+        value={message}
+        onChange={handleFieldChange}
+        disabled={disabled}
+      />
+    </div>
+  );
+};
+
+export default () => {
+  const [disabled, setDisabled] = useState(false);
+
+  const handleDisable = useCallback(() => {
+    setDisabled(disabled => !disabled);
+  }, []);
+  
+  return (
+    <div>
+      <p>Alert station</p>
+      <p>
+        <button onClick={handleDisable}>
+          {disabled ? 'Enable' : 'Disable'} field
+        </button>
+      </p>
+      <Field disabled={disabled}/>
+    </div>
+  );
+};
+```
+
+<iframe src="https://codesandbox.io/embed/react-hooks-counter-demo-gv8z3?fontsize=14" title="React Memo Demo" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+
+This is a simple app where you can write something on the textarea and pressing `Display Message` will pops up an alert with that message.
 
 _(Work in progress)_
