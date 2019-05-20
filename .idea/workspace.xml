@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e36c907a-dec0-4dd6-9bb5-20c3e9d88926" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/content/mighty-mighty-memoization/alazyfox.gif" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/content/mighty-mighty-memoization/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/mighty-mighty-memoization/index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gatsby-config.js" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/schema.graphql" beforeDir="false" afterPath="$PROJECT_DIR$/schema.graphql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/BlogPost/BlogPost.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/BlogPost/BlogPost.tsx" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -27,7 +21,7 @@
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
               <first_editor relative-caret-position="405">
-                <caret line="409" selection-start-line="409" selection-end-line="409" />
+                <caret line="409" column="18" selection-start-line="409" selection-start-column="18" selection-end-line="409" selection-end-column="18" />
                 <folding>
                   <element signature="n#!!doc" expanded="true" />
                   <element signature="n#!!doc" expanded="true" />
@@ -246,18 +240,18 @@
       <workItem from="1557941458522" duration="10000" />
       <workItem from="1557972851765" duration="15788000" />
       <workItem from="1558113049262" duration="1055000" />
-      <workItem from="1558169353437" duration="7165000" />
+      <workItem from="1558169353437" duration="7331000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79219000" />
+    <option name="totallyTimeSpent" value="79385000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17124736" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17124736" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -273,7 +267,7 @@
       <window_info anchor="bottom" id="GraphQL" order="9" weight="0.25675675" />
       <window_info anchor="bottom" id="TypeScript" order="10" weight="0.32923833" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="12" visible="true" weight="0.24324325" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="12" visible="true" weight="0.24324325" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -585,7 +579,7 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
           <first_editor relative-caret-position="405">
-            <caret line="409" selection-start-line="409" selection-end-line="409" />
+            <caret line="409" column="18" selection-start-line="409" selection-start-column="18" selection-end-line="409" selection-end-column="18" />
             <folding>
               <element signature="n#!!doc" expanded="true" />
               <element signature="n#!!doc" expanded="true" />

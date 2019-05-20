@@ -365,7 +365,7 @@ Every time `getChangeHandler` have to go through the process of creating a funct
 
 ![Oof](alazyfox.gif)
 
-Needless to say, when you make use of the good example from the above section, this problem will go away. In real life situation, you will be likely to deal with a big form and complex change handlers. I have experienced massive, obvious performance problem with poor form libraries in considerably powerful laptops. We're all internet consumers and we can all agree that using a laggy, bug-ridden form is the least fun thing to do in the world. Let's try and keep that away from our customers, shall we?
+Needless to say, when you make use of the good example from the above section, this problem will go away. In real life situation, you will be likely to deal with a big form and complex change handlers. I have experienced massive, obvious performance problems with poor form libraries in considerably powerful laptops. We're all internet consumers and we can all agree that using a laggy, bug-ridden form is the least fun thing to do in the world. Let's try and keep that away from our customers, shall we?
 
 ## Memoization in functional components
 
@@ -407,3 +407,4 @@ So what's going on here? Before [React 16.8.0](https://reactjs.org/blog/2019/02/
 - **An entire functional component is equivalent to an empty Class component with a render() function containing the same content.** This means: **on every re-render, the entire content of a functional component will be recalled.**
 - Notice the `handleClick` event handler. Normally you can memoize the handler in the body of a class component, but you cannot do so with a functional component since the handler depends on the props (and you can still memoize a propless handler outside of the component).
 
+_(Work in progress)_
