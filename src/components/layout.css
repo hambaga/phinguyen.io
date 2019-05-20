@@ -460,8 +460,8 @@ td:last-child {
 tt,
 code {
   background-color: hsla(0, 0%, 0%, 0.04);
-  font-family: "SFMono-Regular", Consolas, "Roboto Mono", "Droid Sans Mono",
-    "Liberation Mono", Menlo, Courier, monospace;
+  font-family: "Cousine", Consolas, "Roboto Mono", "Droid Sans Mono",
+    "Liberation Mono", Menlo, Courier, monospace !important;
   padding: 0.2em 0;
 }
 pre code {

@@ -66,8 +66,8 @@ export default (props) => {
             </span>
             <Logos>
               {props.data.logos.edges.map(({node}, i) => (
-                <Logo>
-                  <Img key={i} fluid={node.childImageSharp.fluid}/>
+                <Logo key={i}>
+                  <Img fluid={node.childImageSharp.fluid}/>
                 </Logo>
               ))}
             </Logos>

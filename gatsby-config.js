@@ -23,8 +23,8 @@ module.exports = {
             variants: [`400`, `500`, `600`, `700`]
           },
           {
-            family: 'Noto Sans TC',
-            variants: [`400`, `700`]
+            family: 'Cousine',
+            variants: [`400`]
           }
         ],
       },

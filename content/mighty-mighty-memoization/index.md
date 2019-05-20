@@ -5,7 +5,7 @@ date: '2019-3-15'
 image: cover.jpg
 imageAuthor: Aleksandra Khaprenko
 imageCredit: https://unsplash.com/photos/0PPw9irzLIw
-tags: ['javascript', 'typescript',  'react', 'memoization', 'memo']
+tags: ['javascript', 'typescript', 'react', 'memoization', 'memo']
 ---
 
 The word _Memoization_ used to scare the 💩 out of me. I pictured it some kind of dark forbidden art of ancient magic, a discipline that only the most experienced coding wizards could hone. Over time, as I gained more experience and on my way into mastering React, _it still scared the 💩 outta me_.
@@ -131,7 +131,7 @@ export default class App extends React.Component {
 
 This is what I call **in-class memoization** (not an universal term, don't quote me on this 😛).
 
-There is one more way to memoize values in this situation (works for both class components and functional components). **If you have an event handler or any value that are not dependent on any of your state or props, you can declare the them outside of the class**.
+There is one more way to memoize values in this situation (works for both class components and functional components). **If you have an event handler or any value that are not dependent on any of your state or props, you can declare them outside of the class**.
 
 ```js
 const handleLog = () => { // highlight-line
@@ -242,7 +242,7 @@ class UserForm extends React.Component {
 }
 ```
 
-Well, we can keep doing this... until your form grows bigger and bigger and you have some 10, 15 form fields to handle. So do you think it's wise to hand-make 15 more event handlers? Of course not!
+Well, we can keep doing this... until your form grows bigger and bigger and you have some 10, 15 form fields to handle. So do you think it's wise to manually write 15 more event handlers? Of course not!
 
 If you are familiar with functional programming, you would immediately think of **currying your function**:
 
@@ -325,4 +325,85 @@ Kool, right? You can make one universal change handler using this nifty little t
 
 ### How much damage can you cause for not using memoization?
 
-The consequences of not memoizing your stuff can be really apparent in a component that re-renders in a high frequency.
+The consequences of not memoizing your stuff can be really obvious in a component that re-renders in a high frequency.
+
+Let's use our previous example of bad event handler currying:
+
+```js
+// BAD EXAMPLE, DO NOT FOLLOW!
+// BAD EXAMPLE, DO NOT FOLLOW!
+// BAD EXAMPLE, DO NOT FOLLOW!
+
+export default class App extends React.Component {
+  state = {
+    title: '',
+    body: ''
+  }
+
+  getChangeHandler = (field) => {
+    console.log('An event handler was crated :('); // highlight-line
+    return (event) => {
+      this.setState({[field]: event.target.value});
+    };
+  };
+
+  render() {
+    return (
+      <form>
+        <p><span>Title</span></p>
+        <input onChange={this.getChangeHandler('title')} type="text"/>
+
+        <p><span>Body</span></p>
+        <textarea onChange={this.getChangeHandler('body')} type="text"/>
+      </form>
+    );
+  }
+}
+```
+
+Every time `getChangeHandler` have to go through the process of creating a function, the console will scream bloody murder.
+
+![Oof](alazyfox.gif)
+
+Needless to say, when you make use of the good example from the above section, this problem will go away. In real life situation, you will be likely to deal with a big form and complex change handlers. I have experienced massive, obvious performance problem with poor form libraries in considerably powerful laptops. We're all internet consumers and we can all agree that using a laggy, bug-ridden form is the least fun thing to do in the world. Let's try and keep that away from our customers, shall we?
+
+## Memoization in functional components
+
+The introduction of hooks was such a refreshing change in React, and one of the benefits that it brought was the `useMemo` and `useCallback` hooks. These new additions allow you to memoize your values in a brand new way, although at the cost of an extra level of complexity. But don't fret, I will try my best to demonstrate the way it works.
+
+First of all, it's crucial to understand the nature of functional component. A functional component like this:
+
+```js
+const Butt = ({buttonLabel, message}) => {
+  const handleClick = () => {
+    console.log(message);
+  };
+  
+  return (
+    <button onClick={handleClick}>{buttonLabel}</button>
+  );
+};
+```
+
+Is equivalent to:
+
+```js
+class Butt extends React.Component {
+  render() {
+    const handleClick = () => {
+      console.log(this.props.message);
+    };
+    
+    return (
+      <button onClick={handleClick}>{this.props.buttonLabel}</button>
+    );
+  }
+}
+```
+
+So what's going on here? Before [React 16.8.0](https://reactjs.org/blog/2019/02/06/react-v16.8.0.html), functional components are mostly used for simple stateless components with minimal logic and optimal for props representation (which is why React.SFC used to be a thing). Here are a few reasons:
+
+- Before hooks, there is no way to implement state inside a functional component, but a functional component can still be reactive with props.
+- **An entire functional component is equivalent to an empty Class component with a render() function containing the same content.** This means: **on every re-render, the entire content of a functional component will be recalled.**
+- Notice the `handleClick` event handler. Normally you can memoize the handler in the body of a class component, but you cannot do so with a functional component since the handler depends on the props (and you can still memoize a propless handler outside of the component).
+

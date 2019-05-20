@@ -3,7 +3,6 @@ import Layout from '../../components/layout';
 import {graphql} from 'gatsby';
 import {BlogPostWrapper, Title, Date, ImageCredit} from './styled-components';
 import {format} from 'date-fns';
-import Helmet from 'react-helmet';
 import Img from 'gatsby-image';
 import {Paper} from '../../components/UIKit';
 import SEO from '../../components/SEO';
@@ -14,6 +13,7 @@ interface Props {
       html: string;
       excerpt: string;
       frontmatter: {
+        description: string;
         tags: string[];
         title: string;
         date: string;
@@ -31,11 +31,11 @@ interface Props {
 
 const BlogPost = ({data}: Props) => {
   const post = data.markdownRemark;
-  const {title, date, imageAuthor, image, imageCredit, tags} = post.frontmatter;
+  const {title, description, date, imageAuthor, image, imageCredit, tags} = post.frontmatter;
 
   return (
     <Layout>
-      <SEO title={title} keywords={tags}/>
+      <SEO description={description} title={title} keywords={tags}/>
       <Paper noMobile>
         <BlogPostWrapper>
           <Title>{title}</Title>
@@ -60,6 +60,7 @@ export const query = graphql`
         tags
         title
         date
+        description
         imageCredit
         imageAuthor
         image {
