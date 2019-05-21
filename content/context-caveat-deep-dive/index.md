@@ -1,7 +1,7 @@
 ---
 title: A closer look at the caveat of Context API
 description: This post talks about React's Context API and the logic behind its caveat as mentioned on React's official documentation.
-date: '2019-3-13'
+date: '2019-03-13'
 image: cover.jpg
 imageAuthor: Rodion Kutsaev
 imageCredit: https://unsplash.com/photos/F573ZRbKOEw

@@ -1,7 +1,7 @@
 ---
 title: Mighty mighty memoization (React memoization deep dive)
 description: We talk about various angles and methods to achieve memoization in React
-date: '2019-3-15'
+date: '2019-03-15'
 image: cover.jpg
 imageAuthor: Aleksandra Khaprenko
 imageCredit: https://unsplash.com/photos/0PPw9irzLIw

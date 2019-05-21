@@ -81,7 +81,7 @@ export default (props) => {
             <Link to={node.fields.slug}>
               <h3>{node.frontmatter.title}</h3>
             </Link>
-            <Date>{format(node.frontmatter.date, 'MMMM, DD, YYYY')}</Date>
+            <Date>{node.frontmatter.date}</Date>
             <p>{node.excerpt + ' '}
               <Link to={node.fields.slug}>
                 Read more
@@ -115,7 +115,7 @@ export const listQuery = graphql`
           }
           excerpt(pruneLength: 250)
           frontmatter {
-            date
+            date (formatString: "MMMM DD, YYYY")
             title
           }
         }

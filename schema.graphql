@@ -489,7 +489,16 @@ type MarkdownRemarkFields {
 }
 
 type MarkdownRemarkFrontmatter {
-  date: String
+  date(
+    #Returns the difference between this date and the current time. Defaults to \"miliseconds\" but you can also pass in as the measurement \"years\", \"months\", \"weeks\", \"days\", \"hours\", \"minutes\", and \"seconds\".
+    difference: String,
+    #Format the date using Moment.js' date tokens, e.g. `date(formatString: \"YYYY MMMM DD\")`. See https://momentjs.com/docs/#/displaying/format/ for documentation for different tokens.
+    formatString: String,
+    #Returns a string generated with Moment.js' `fromNow` function
+    fromNow: Boolean,
+    #Configures the locale Moment.js will use to format the date.
+    locale: String
+  ): Date
   description: String
   image: File
   imageAuthor: String
@@ -2047,7 +2056,7 @@ input MarkdownRemarkFilterInput {
 }
 
 input MarkdownRemarkFrontmatterFilterInput {
-  date: StringQueryOperatorInput
+  date: DateQueryOperatorInput
   description: StringQueryOperatorInput
   image: FileFilterInput
   imageAuthor: StringQueryOperatorInput
