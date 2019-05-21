@@ -8,23 +8,23 @@ imageCredit: https://unsplash.com/photos/0PPw9irzLIw
 tags: ['javascript', 'typescript', 'react', 'memoization', 'memo']
 ---
 
-The word _Memoization_ used to scare the 💩 out of me. I pictured it some kind of dark forbidden art of ancient magic, a discipline that only the most experienced coding wizards could hone. Over time, as I gained more experience and on my way into mastering React, _it still scared the 💩 outta me_.
+The word _Memoization_ used to scare the 💩 out of me. I pictured it some kind of dark forbidden art of ancient magic, a discipline that only the most experienced coding wizards could hone. Over time, as I gained more skill and on my way into mastering React, _it still scared the 💩 outta me_.
 
 Before going forward, you can read this sentence coming straight from [React docs on the `useMemo` hook](https://reactjs.org/docs/hooks-reference.html#usememo):
 
 > Write your code so that it still works without useMemo — and then add it to optimize performance.
 
-Take the statement above as a thumb rule before going forward. _Memoization is not a required technique in React_. That is why before the introduction of hooks, it is much more difficult to memoize values in React. You either had to rely on different Javascript tricks to achieve the effect, or use 3rd party libraries like [Moize](https://github.com/planttheidea/moize) or [react-memoize](https://github.com/theKashey/react-memoize). Not to mention, memoizing values in React will make your code more verbose and obfuscated, and can even introduce errors if memoization is poorly done.
+Take it as a thumb rule before going forward. _Memoization doesn't make or break a React app_. That is why, before the introduction of hooks, it was quite difficult to memoize values in React. You either needed to rely on Javascript tricks to achieve the effect, or use 3rd party libraries like [Moize](https://github.com/planttheidea/moize) or [react-memoize](https://github.com/theKashey/react-memoize). Not to mention, memoizing values in React will make your code more verbose and obfuscated, and can even introduce errors if poorly done.
 
-That's why you, before going into the valley of darkness, should understand the price you are paying to achieve maximum performance optimization. If all is understood, I will henceforth show you, in my experience, how to correctly and effectively memoize values in React.
+That's why you, before journey into the valley of darkness, should understand the price you will pay to achieve maximum performance optimization. If all is understood, I will henceforth show you, in my experience, how to correctly and effectively memoize values in React.
 
 ## So what is memoization anyway?
 
-Let's say you're a carpenter dude who wants to make a table, but you don't have a hammer. You then go to the local blacksmith and ask him to make you a steel hammer. You come home, used the hammer to make a cute little table.
+Let's say you want to make a table, but you don't have a hammer. You go to the local blacksmith and ask him to make you a steel hammer. You come home and use the hammer to make a neat little table.
 
-The next week, you realize that you need to make some chairs. **So, would you go to the blacksmith and ask for another hammer, or do you simply use the one he made for you last week?**
+The next day, you realize that you need to make some chairs. **So, would you go to the blacksmith and ask for another hammer, or do you just use the one he already made for you?**
 
-This is what memoization is about. If you don't fancy my metaphor, you can checkout the [wikipedia definition](https://en.wikipedia.org/wiki/Memoization) here.
+That is what memoization is all about. If you don't fancy metaphors, you can checkout the [wikipedia definition](https://en.wikipedia.org/wiki/Memoization) here.
 
 Let's start with a simple Javascript example:
 ```js
@@ -38,9 +38,9 @@ setInterval(() => {
 }, 1000);
 ```
 
-This piece of code will attempt to fetch todo notes from the placeholder endpoint then log them into the console every second. Now the problem with this is that every time you want to log the code, you'd have to fetch the data again. **This is highly inefficient.**
+This piece of code will attempt to fetch todo notes from the placeholder endpoint then log them into the console every second. Now, the problem is, every time you want to log the code, you'd have to fetch the data again. **This is highly inefficient and can lead to race condition.**
 
-Imagine you're the owner of an API and you have to do fetching in a high frequency. Every unnecessary API call you make to the server will both congest the server, add a few cents to the traffic cost and make your code slower.
+Imagine you're the owner of a server that handles high frequency API calls. Every unnecessary API call you make to the server will congest the server, add a few cents to the traffic cost and make your code much slower.
 
 So how do we fix this? We memoize, of course:
 
@@ -409,7 +409,7 @@ So what's going on here? Before [React 16.8.0](https://reactjs.org/blog/2019/02/
 
 And then, just like that, 16.8.0 waltzed in and changed the entire game. When `useState` were to become the next standard for state management, the React team were obliged to introduce a way to optimize values inside a stateful functional component, and that leads us to `useMemo`. The only difference is that, `useMemo` can do much more than what a class component could do, and finally feels like a well-made feature instead of tricks and gimmicks.
 
-I won't try to explain how these hooks work in a beginner's perspective - [the documentation](https://reactjs.org/docs/hooks-intro.html) would certainly do it better for me. If you already know how the gist of how these hooks work, I will now dive right in with an intermediate example:
+I won't try to explain how these hooks work in a beginner's perspective - [the documentation](https://reactjs.org/docs/hooks-intro.html) would certainly do it better for me. If you already know the gist of how these hooks work, I will dive right in with an tricky example:
 
 ```js
 import React, {useMemo, useState, useCallback} from 'react';
@@ -470,6 +470,6 @@ export default () => {
 
 <iframe src="https://codesandbox.io/embed/react-hooks-counter-demo-gv8z3?fontsize=14" title="React Memo Demo" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
 
-This is a simple app where you can write something on the textarea and pressing `Display Message` will pops up an alert with that message.
+This is a simple app where you can write something on the textarea and pressing `Display Message` will pops up an alert with that message. Pressing `Disable Field` will grey out both the button and the textarea.
 
 _(Work in progress)_

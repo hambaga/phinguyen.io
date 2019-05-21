@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Phi Nguyen`,
-    description: `My name is Hong Phi Nguyen and this is my personal blog. I love talking about tech, web development and various different topics in the industry.`,
+    description: `Yo, I'm Phi Nguyen and this is my blog. I love talking about tech, web development and various different topics in the industry.`,
     author: `Phi Nguyen`,
   },
 
