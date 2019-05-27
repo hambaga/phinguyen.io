@@ -24,7 +24,7 @@ Let's say you want to make a table, but you don't have a hammer. You go to the l
 
 The next day, you realize that you need to make some chairs. **So, would you go to the blacksmith and ask for another hammer, or do you just use the one he already made for you?**
 
-That is what memoization is all about. If you don't fancy metaphors, you can checkout the [wikipedia definition](https://en.wikipedia.org/wiki/Memoization) here.
+That is what memoization is all about, plain and simple. If you don't fancy metaphors, you can checkout the [wikipedia definition](https://en.wikipedia.org/wiki/Memoization) here.
 
 Let's start with a simple Javascript example:
 ```js
@@ -409,7 +409,7 @@ So what's going on here? Before [React 16.8.0](https://reactjs.org/blog/2019/02/
 
 And then, just like that, 16.8.0 waltzed in and changed the entire game. When `useState` were to become the next standard for state management, the React team were obliged to introduce a way to optimize values inside a stateful functional component, and that leads us to `useMemo`. The only difference is that, `useMemo` can do much more than what a class component could do, and finally feels like a well-made feature instead of tricks and gimmicks.
 
-I won't try to explain how these hooks work in a beginner's perspective - [the documentation](https://reactjs.org/docs/hooks-intro.html) would certainly do it better for me. If you already know the gist of how these hooks work, I will dive right in with an tricky example:
+I won't try to explain how these hooks work in a beginner's perspective - [the documentation](https://reactjs.org/docs/hooks-intro.html) would certainly do it better for me. If you already know the gist of how these hooks work, I will dive right in with a tricky example:
 
 ```js
 import React, {useMemo, useState, useCallback} from 'react';
