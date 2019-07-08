@@ -4,7 +4,6 @@ import SEO from '../components/SEO';
 import styled from 'styled-components';
 import {Paper} from '../components/UIKit';
 import {graphql, Link} from 'gatsby';
-import {format} from 'date-fns';
 import Avatar from '../components/avatar';
 import Img from 'gatsby-image';
 

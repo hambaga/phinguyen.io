@@ -3,6 +3,7 @@ import Helmet from 'react-helmet';
 import {useSiteMetadata} from '../../hooks';
 // @ts-ignore
 import avatar from '../../images/avatar.jpg';
+import {Location} from '@reach/router';
 
 interface Props {
   description?: string;
@@ -12,13 +13,14 @@ interface Props {
   title: string;
 }
 
-const Index = ({
+const SEO = ({
   description = '',
   lang = 'en',
   meta = [],
   keywords = [],
   title,
-}: Props) => {
+  origin
+}: Props & {origin: string}) => {
   const siteMetadata = useSiteMetadata();
 
   const metaDescription = description || siteMetadata.description;
@@ -59,6 +61,10 @@ const Index = ({
       name: `twitter:description`,
       content: metaDescription,
     },
+    {
+      name: `google-site-verification`,
+      content: `Ew218HCy74q2aSoPkMy2eMwo6_dKkN_HA34YdBkALFo`
+    },
     ...(keywords.length > 0
       ? [{
         name: `keywords`,
@@ -68,14 +74,28 @@ const Index = ({
     ...meta
   ];
 
+  const links = [
+    {
+      rel: 'canonical',
+      href: origin
+    }
+  ];
+
   return (
     <Helmet
       htmlAttributes={{lang}}
       title={title}
       titleTemplate={`%s | ${siteMetadata.title}`}
       meta={metaProps}
+      link={links}
     />
   );
 };
 
-export default Index;
+export default (props: Props) => (
+  <Location>
+    {({location}) => (
+      <SEO origin={location.pathname} {...props}/>
+    )}
+  </Location>
+);
