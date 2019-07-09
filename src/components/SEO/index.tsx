@@ -74,28 +74,22 @@ const SEO = ({
     ...meta
   ];
 
-  const links = [
-    {
-      rel: 'canonical',
-      href: origin
-    }
-  ];
-
   return (
     <Helmet
       htmlAttributes={{lang}}
       title={title}
       titleTemplate={`%s | ${siteMetadata.title}`}
       meta={metaProps}
-      link={links}
-    />
+    >
+      <link rel="canonical" href={origin}/>
+    </Helmet>
   );
 };
 
 export default (props: Props) => (
   <Location>
     {({location}) => (
-      <SEO origin={location.pathname} {...props}/>
+      <SEO origin={location.origin} {...props}/>
     )}
   </Location>
 );
